@@ -14,6 +14,10 @@
         .btn-buy::after {
             content: ">>";
         }
+
+        .container-subscribe {
+            background-color: #FEEAE9;
+        }
     </style>
 </head>
 
@@ -21,7 +25,7 @@
     <!--Header Section Start-->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
+            <div class="container fixed-top">
                 <a class="navbar-brand" href="#">
                     <img src="images/logo.png" alt="">
                 </a>
@@ -36,14 +40,16 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Shoes</a>
+                            <a class="nav-link active" href="#shoes">Shoes</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">BackPacks</a>
+                            <a class="nav-link active" href="#backpacks" tabindex="-1"
+                                aria-disabled="true">BackPacks</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Subscribe</a>
+                            <a class="nav-link active" href="#subscribe" tabindex="-1"
+                                aria-disabled="true">Subscribe</a>
                         </li>
                     </ul>
                 </div>
@@ -134,7 +140,7 @@
 
         <!--Product Section Shoes Start-->
         <section class="container">
-            <h2>Shoes</h2>
+            <h2 id="shoes">Shoes</h2>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col col-md-6 col-lg-4">
                     <div class="card border-0 shadow-lg h-100">
@@ -193,7 +199,7 @@
 
         <!--product section Backpack Start-->
         <section class="container my-5">
-            <h2>BackPack</h2>
+            <h2 id="backpacks">BackPack</h2>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col col-md-6 col-lg-4">
                     <div class="card border-0 shadow-lg h-100">
@@ -252,8 +258,8 @@
         </section>
 
         <!--Subscribe Section Start-->
-        <section class="container d-flex justify-content-center" style="background-color:#FEEAE9;">
-            <div class="p-4">
+        <section class="container container-subscribe d-flex justify-content-center rounded-3">
+            <div id="subscribe" class="p-4">
                 <h3>LET'S STAY IN TOUCH</h3>
                 <p>Get updates on sales, specials and more</p>
                 <input type="text" placeholder="Your Email">
@@ -263,11 +269,14 @@
         </section>
         <!--Subscribe Section End-->
     </main>
+
+    <!--Footer Section Start-->
     <footer>
         <div class="container d-flex justify-content-center mt-5">
             <p>&copy;2020. Panda Commerce. All rights reserved. Sofia, Bulgaria.</p>
         </div>
     </footer>
+    <!--Footer Section Start-->
 
     <!--JavaScript BootStrap Add-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
